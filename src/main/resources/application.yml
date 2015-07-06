@@ -1,0 +1,26 @@
+spring:
+  profiles:
+    active: prod
+    
+---
+
+spring:
+  profiles: prod
+  management:
+    context-path: /manage
+  datasource:
+    jndi-name: java:jboss/datasources/ExampleDS
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+
+---
+
+spring:
+  profiles: dev
+  datasource:
+    url: jdbc:h2:mem:test;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+  jpa:
+    database: HSQL
+    hibernate:
+      ddl-auto: create-drop
