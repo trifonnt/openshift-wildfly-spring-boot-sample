@@ -22,7 +22,7 @@ Commit the changes:
 
 # Step 3: Pull Source code from GitHub
 
-    git remote add upstream https://github.com/kolorobot/openshift-wildfly-spring-boot.git
+    git remote add upstream https://github.com/trifonnt/openshift-wildfly-spring-boot-sample.git
     git pull -s recursive -X theirs upstream master
 
 # Step 4: Push changes
